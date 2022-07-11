@@ -6,7 +6,7 @@ MANIFEST_FILE ?= plugin.json
 GOPATH ?= $(shell go env GOPATH)
 GO_TEST_FLAGS ?= -race
 GO_BUILD_FLAGS ?=
-MM_UTILITIES_DIR ?= ../mattermost-utilities
+MM_UTILITIES_DIR ?= ../workchat-utilities
 DLV_DEBUG_PORT := 2346
 
 export GO111MODULE=on
@@ -206,7 +206,7 @@ endif
 i18n-extract:
 ifneq ($(HAS_WEBAPP),)
 ifeq ($(HAS_MM_UTILITIES),)
-	@echo "You must clone github.com/mattermost/mattermost-utilities repo in .. to use this command"
+	@echo "You must clone gitlab.com/w1572/workchat-utilities repo in .. to use this command"
 else
 	cd $(MM_UTILITIES_DIR) && npm install && npm run babel && node mmjstool/build/index.js i18n extract-webapp --webapp-dir $(PWD)/webapp
 endif
@@ -256,7 +256,7 @@ endif
 sync:
 ifndef STARTERTEMPLATE_PATH
 	@echo STARTERTEMPLATE_PATH is not set.
-	@echo Set STARTERTEMPLATE_PATH to a local clone of https://github.com/mattermost/mattermost-plugin-starter-template and retry.
+	@echo Set STARTERTEMPLATE_PATH to a local clone of https://gitlab.com/w1572/workchat-plugin-starter-template and retry.
 	@exit 1
 endif
 	cd ${STARTERTEMPLATE_PATH} && go run ./build/sync/main.go ./build/sync/plan.yml $(PWD)

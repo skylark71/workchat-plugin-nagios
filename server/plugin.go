@@ -7,18 +7,18 @@ import (
 	"path/filepath"
 	"sync"
 
-	pluginapi "github.com/mattermost/mattermost-plugin-api"
-	"github.com/mattermost/mattermost-plugin-api/cluster"
-	"github.com/mattermost/mattermost-plugin-api/experimental/command"
-	"github.com/mattermost/mattermost-plugin-nagios/go-nagios/nagios"
-	"github.com/mattermost/mattermost-server/v6/model"
-	"github.com/mattermost/mattermost-server/v6/plugin"
+	"gitlab.com/w1572/backend/model"
+	"gitlab.com/w1572/backend/plugin"
+	pluginapi "gitlab.com/w1572/workchat-plugin-api"
+	"gitlab.com/w1572/workchat-plugin-api/cluster"
+	"gitlab.com/w1572/workchat-plugin-api/experimental/command"
+	"gitlab.com/w1572/workchat-plugin-nagios/go-nagios/nagios"
 )
 
-// Plugin implements the interface expected by the Mattermost server to
+// Plugin implements the interface expected by the Workchat server to
 // communicate between the server and plugin processes.
 type Plugin struct {
-	plugin.MattermostPlugin
+	plugin.WorkchatPlugin
 
 	// configurationLock synchronizes access to the configuration.
 	configurationLock sync.RWMutex

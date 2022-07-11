@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/mattermost/mattermost-plugin-api/cluster"
-	"github.com/mattermost/mattermost-plugin-nagios/go-nagios/nagios"
-	"github.com/mattermost/mattermost-server/v6/model"
+	"gitlab.com/w1572/backend/model"
+	"gitlab.com/w1572/workchat-plugin-api/cluster"
+	"gitlab.com/w1572/workchat-plugin-nagios/go-nagios/nagios"
 )
 
 func (p *Plugin) sendMessages(channelID string, messages ...string) error {

@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	git "gopkg.in/src-d/go-git.v4"
 
-	gitutil "github.com/mattermost/mattermost-plugin-starter-template/build/sync/plan/git"
+	gitutil "gitlab.com/w1572/workchat-plugin-starter-template/build/sync/plan/git"
 )
 
 func TestFileHistory(t *testing.T) {

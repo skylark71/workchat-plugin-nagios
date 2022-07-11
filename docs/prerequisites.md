@@ -1,3 +1,3 @@
 ## Prerequisites 
 
-This guide is intended for Mattermost System Admins setting up the Nagios plugin and Mattermost users who want information about the plugin functionality.
+This guide is intended for Workchat System Admins setting up the Nagios plugin and Workchat users who want information about the plugin functionality.

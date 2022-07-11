@@ -32,7 +32,7 @@ func Test_cloneURLToPath(t *testing.T) {
 		},
 		{
 			name: "u has a path",
-			u:    mustParseURL("https://github.com/mattermost/mattermost-plugin-nagios/go-nagios"),
+			u:    mustParseURL("https://gitlab.com/w1572/workchat-plugin-nagios/go-nagios"),
 			want: mustParseURL("https://github.com"),
 		},
 	}

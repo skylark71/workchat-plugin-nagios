@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/mattermost/mattermost-server/v6/plugin"
+	"gitlab.com/w1572/backend/plugin"
 )
 
 func main() {

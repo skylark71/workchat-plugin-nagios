@@ -1,10 +1,10 @@
-# Mattermost/Nagios Plugin
+# Workchat/Nagios Plugin
 
-A Nagios plugin for Mattermost. Supports Nagios Core >= 4.4.x.
+A Nagios plugin for Workchat. Supports Nagios Core >= 4.4.x.
 
 This plugin allows you to:
 
-* Get logs from specific systems without leaving Mattermost.
+* Get logs from specific systems without leaving Workchat.
 * Get alerts and notifications resembling the `showlog.cgi` UI instantly delivered.
 * Receive system monitoring reports on a subscribed channel.
 * Be frequently informed which hosts and services have an abnormal state.

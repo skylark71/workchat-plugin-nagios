@@ -9,13 +9,13 @@ import (
 
 	"sigs.k8s.io/yaml"
 
-	"github.com/mattermost/mattermost-plugin-starter-template/build/sync/plan"
+	"gitlab.com/w1572/workchat-plugin-starter-template/build/sync/plan"
 )
 
 func main() {
 	verbose := flag.Bool("verbose", false, "enable verbose output")
 	flag.Usage = func() {
-		fmt.Fprintf(flag.CommandLine.Output(), "Update a pluging directory with /mattermost-plugin-starter-template/.\n")
+		fmt.Fprintf(flag.CommandLine.Output(), "Update a pluging directory with /workchat-plugin-starter-template/.\n")
 		fmt.Fprintf(flag.CommandLine.Output(), "Usage of %s:\n", os.Args[0])
 		fmt.Fprintf(flag.CommandLine.Output(), "%s <plan.yml> <plugin_directory>\n", os.Args[0])
 		flag.PrintDefaults()

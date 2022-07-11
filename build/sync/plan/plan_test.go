@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/mattermost/mattermost-plugin-starter-template/build/sync/plan"
+	"gitlab.com/w1572/workchat-plugin-starter-template/build/sync/plan"
 )
 
 func TestUnmarshalPlan(t *testing.T) {

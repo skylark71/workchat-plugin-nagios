@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Mattermost/Nagios Plugin](README.md)
+* [Workchat/Nagios Plugin](README.md)
 
 ## Getting Started
 

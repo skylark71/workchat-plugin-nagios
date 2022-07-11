@@ -3,7 +3,7 @@ package main
 import (
 	"testing"
 
-	"github.com/mattermost/mattermost-server/v6/model"
+	"gitlab.com/w1572/backend/model"
 )
 
 func Test_getAutoCompleteDesc(t *testing.T) {

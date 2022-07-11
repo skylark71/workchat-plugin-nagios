@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mattermost/mattermost-plugin-nagios/go-nagios/nagios"
+	"gitlab.com/w1572/workchat-plugin-nagios/go-nagios/nagios"
 )
 
 func Test_gettingReportUnsuccessfulMessage(t *testing.T) {
@@ -457,7 +457,7 @@ func generateHomogenousHostListData(state string, n int) nagios.HostListData {
 }
 
 // Test_formatHostList only tests the edge cases to make sure we don't hit the
-// Mattermost's message limits.
+// Workchat's message limits.
 func Test_formatHostList(t *testing.T) {
 	tests := []struct {
 		name string
@@ -820,7 +820,7 @@ func mustGenerateHomogenousServiceListData(state string, outer, inner int) nagio
 }
 
 // Test_formatServiceList only tests the edge cases to make sure we don't hit
-// the Mattermost's message limits.
+// the Workchat's message limits.
 func Test_formatServiceList(t *testing.T) {
 	tests := []struct {
 		name string

@@ -3,7 +3,7 @@ package main
 import (
 	"testing"
 
-	"github.com/mattermost/mattermost-plugin-nagios/go-nagios/nagios"
+	"gitlab.com/w1572/workchat-plugin-nagios/go-nagios/nagios"
 )
 
 func Test_formatHostName(t *testing.T) {

@@ -11,7 +11,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	git "gopkg.in/src-d/go-git.v4"
 
-	"github.com/mattermost/mattermost-plugin-starter-template/build/sync/plan"
+	"gitlab.com/w1572/workchat-plugin-starter-template/build/sync/plan"
 )
 
 // Tests for the RepoIsClean checker.

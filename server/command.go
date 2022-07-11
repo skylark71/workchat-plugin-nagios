@@ -5,8 +5,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/mattermost/mattermost-server/v6/model"
-	"github.com/mattermost/mattermost-server/v6/plugin"
+	"gitlab.com/w1572/backend/model"
+	"gitlab.com/w1572/backend/plugin"
 )
 
 func getAutoCompleteDesc(m map[string]commandHandlerFunc) string {
@@ -188,7 +188,7 @@ func (p *Plugin) getCommand(iconData string) *model.Command {
 		AutoCompleteDesc:     desc,
 		AutoCompleteHint:     "[command]",
 		DisplayName:          "Nagios",
-		Description:          "A Mattermost plugin to interact with Nagios",
+		Description:          "A Workchat plugin to interact with Nagios",
 		AutocompleteData:     getAutocompleteData(desc),
 		AutocompleteIconData: iconData,
 	}

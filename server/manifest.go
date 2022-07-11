@@ -6,7 +6,7 @@ import (
 	"encoding/json"
 	"strings"
 
-	"github.com/mattermost/mattermost-server/v6/model"
+	"gitlab.com/w1572/backend/model"
 )
 
 var manifest model.Manifest
@@ -15,10 +15,10 @@ const manifestStr = `
 {
   "id": "nagios",
   "name": "Nagios",
-  "description": "Nagios plugin for Mattermost",
-  "homepage_url": "https://github.com/mattermost/mattermost-plugin-nagios",
-  "support_url": "https://github.com/mattermost/mattermost-plugin-nagios/issues",
-  "release_notes_url": "https://github.com/mattermost/mattermost-plugin-nagios/releases/tag/v1.1.0",
+  "description": "Nagios plugin for Workchat",
+  "homepage_url": "https://gitlab.com/w1572/workchat-plugin-nagios",
+  "support_url": "https://gitlab.com/w1572/workchat-plugin-nagios/issues",
+  "release_notes_url": "https://gitlab.com/w1572/workchat-plugin-nagios/releases/tag/v1.1.0",
   "icon_path": "assets/orbit-467260.svg",
   "version": "1.1.0",
   "min_server_version": "5.37.0",
@@ -31,8 +31,8 @@ const manifestStr = `
     "executable": ""
   },
   "settings_schema": {
-    "header": "Having problems configuring the plugin? [Check the configuration guide](https://github.com/mattermost/mattermost-plugin-nagios/#configuring-the-plugin).",
-    "footer": "To report an issue, make a suggestion or a contribution, or fork your own version of the plugin, [check the repository](https://github.com/mattermost/mattermost-plugin-nagios).",
+    "header": "Having problems configuring the plugin? [Check the configuration guide](https://gitlab.com/w1572/workchat-plugin-nagios/#configuring-the-plugin).",
+    "footer": "To report an issue, make a suggestion or a contribution, or fork your own version of the plugin, [check the repository](https://gitlab.com/w1572/workchat-plugin-nagios).",
     "settings": [
       {
         "key": "NagiosURL",

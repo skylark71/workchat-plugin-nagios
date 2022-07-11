@@ -5,13 +5,13 @@ import (
 	"net/http"
 	"reflect"
 
-	"github.com/mattermost/mattermost-plugin-nagios/go-nagios/nagios"
 	"github.com/pkg/errors"
+	"gitlab.com/w1572/workchat-plugin-nagios/go-nagios/nagios"
 )
 
 // configuration captures the plugin's external configuration as exposed in the
-// Mattermost server configuration, as well as values computed from the
-// configuration. Any public fields will be deserialized from the Mattermost
+// Workchat server configuration, as well as values computed from the
+// configuration. Any public fields will be deserialized from the Workchat
 // server configuration in OnConfigurationChange.
 //
 // As plugins are inherently concurrent (hooks being called asynchronously), and
@@ -105,7 +105,7 @@ func (p *Plugin) setConfiguration(configuration *configuration) {
 func (p *Plugin) OnConfigurationChange() error {
 	var configuration = new(configuration)
 
-	// Load the public configuration fields from the Mattermost server
+	// Load the public configuration fields from the Workchat server
 	// configuration.
 	if err := p.API.LoadPluginConfiguration(configuration); err != nil {
 		return errors.Wrap(err, "failed to load plugin configuration")

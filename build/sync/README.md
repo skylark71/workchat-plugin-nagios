@@ -1,14 +1,14 @@
 sync
 ====
 
-The sync tool is a proof-of-concept implementation of a tool for synchronizing mattermost plugin
-repositories with the mattermost-plugin-starter-template repo.
+The sync tool is a proof-of-concept implementation of a tool for synchronizing workchat plugin
+repositories with the workchat-plugin-starter-template repo.
 
 Overview
 --------
 
 At its core the tool is just a collection of checks and actions that are executed according to a
-synchronization plan (see [./build/sync/plan.yml](https://github.com/mattermost/mattermost-plugin-starter-template/blob/sync/build/sync/plan.yml)
+synchronization plan (see [./build/sync/plan.yml](https://gitlab.com/w1572/workchat-plugin-starter-template/blob/sync/build/sync/plan.yml)
 for an example). The plan defines a set of files
 and/or directories that need to be kept in sync between the plugin repository and the template (this
 repo).
@@ -31,10 +31,10 @@ Running
 
 The tool can be executed from the root of this repository with a command:
 ```
-$ go run ./build/sync/main.go ./build/sync/plan.yml ../mattermost-plugin-github
+$ go run ./build/sync/main.go ./build/sync/plan.yml ../workchat-plugin-github
 ```
 
-(assuming `mattermost-plugin-github` is the target repository we want to synchronize with the source).
+(assuming `workchat-plugin-github` is the target repository we want to synchronize with the source).
 
 plan.yml
 ---------
@@ -50,7 +50,7 @@ params:
   repo: source
 ```
 The `repo` parameter takes one of two values:
-- `source` - the `mattermost-plugin-starter-template` repository
+- `source` - the `workchat-plugin-starter-template` repository
 - `target` - the repository of the plugin being updated.
 
 The `actions` section defines actions to be run as part of the synchronization.
